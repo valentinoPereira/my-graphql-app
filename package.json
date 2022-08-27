@@ -7,7 +7,8 @@
     "lint:prettier": "prettier --check '**/**/*.js'",
     "lint:javascript": "eslint . --ext .js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:server": "nodemon server.js"
+    "dev:server": "nodemon server.js",
+    "test:server": "node server.js"
   },
   "author": "Valentino Pereira",
   "license": "MIT",
