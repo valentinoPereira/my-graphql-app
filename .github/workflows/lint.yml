@@ -12,17 +12,10 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-      - uses: actions/checkout@v3
-      - name: Installing dependencies ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: dreamcodez/dead-simple-nodejs@1
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          NODE_VERSION: 18.6.0
       - run: npm ci
       - run: npm run lint:prettier
       - run: npm run lint:javascript
