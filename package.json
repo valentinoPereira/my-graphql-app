@@ -1,7 +1,10 @@
 {
   "name": "my-graphql-app",
   "version": "1.0.0",
-  "description": "Tino practicing graphql",
+  "description": "GraphQL based APIs in Express.js",
+  "repository": {
+    "url": "https://github.com/valentinoPereira/my-graphql-app"
+  },
   "main": "server.js",
   "scripts": {
     "lint:prettier": "prettier --check '**/**/*.js'",
