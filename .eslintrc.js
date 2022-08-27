@@ -10,8 +10,8 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'no-use-before-define': 1,
-    camelcase: 1,
+    'no-use-before-define': 2,
+    camelcase: 2,
     complexity: 1,
     'no-param-reassign': 1,
     'no-restricted-exports': 1,
@@ -25,7 +25,8 @@ module.exports = {
     eqeqeq: 1,
     curly: 1,
     'block-scoped-var': 1,
-    'no-duplicate-imports': 1,
-    'no-self-compare': 1,
+    'no-duplicate-imports': 2,
+    'no-self-compare': 2,
+    semi: 2,
   },
 };

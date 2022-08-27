@@ -10,8 +10,7 @@ app.use(
     schema: schema,
   })
 );
-
+console.log('dd');
 app.listen(4000, () => {
-  // eslint-disable-next-line no-console
   console.log('Server is running on port 4000');
 });
