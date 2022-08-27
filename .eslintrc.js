@@ -1,0 +1,31 @@
+module.exports = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es2021: true,
+  },
+  extends: ['eslint:recommended', 'prettier'],
+  overrides: [],
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
+  rules: {
+    'no-use-before-define': 1,
+    camelcase: 1,
+    complexity: 1,
+    'no-param-reassign': 1,
+    'no-restricted-exports': 1,
+    'no-var': 1,
+    'prefer-const': 1,
+    'one-var-declaration-per-line': 1,
+    'require-await': 1,
+    'vars-on-top': 1,
+    'no-empty-function': 1,
+    'no-console': 1,
+    eqeqeq: 1,
+    curly: 1,
+    'block-scoped-var': 1,
+    'no-duplicate-imports': 1,
+    'no-self-compare': 1,
+  },
+};
