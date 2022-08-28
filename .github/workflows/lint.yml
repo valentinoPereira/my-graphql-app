@@ -20,5 +20,4 @@ jobs:
           node-version: 18.6.0
           cache: "npm"
       - run: npm ci
-      - run: npm run lint:prettier
-      - run: npm run lint:javascript
+      - run: npm run test
