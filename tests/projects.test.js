@@ -23,19 +23,19 @@ describe('.projects', () => {
           .post('/graphql')
           .send({
             query: `{
-            projects {
-                id
-                name
-                status
-                description
-                client {
+                projects {
                     id
                     name
-                    email
-                    phone
+                    status
+                    description
+                    client {
+                        id
+                        name
+                        email
+                        phone
+                    }
                 }
-            }
-        }`,
+            }`,
           })
           .end((err, res) => {
             res.should.have.status(200);
@@ -50,19 +50,19 @@ describe('.projects', () => {
           .post('/graphql')
           .send({
             query: `{
-            projects {
-                id
-                name
-                status
-                description
-                client {
+                projects {
                     id
                     name
-                    email
-                    phone
+                    status
+                    description
+                    client {
+                        id
+                        name
+                        email
+                        phone
+                    }
                 }
-            }
-        }`,
+            }`,
           })
           .end((err, res) => {
             res.should.have.status(200);
@@ -94,19 +94,19 @@ describe('.projects', () => {
           .post('/graphql')
           .send({
             query: `{
-            projects {
-                id
-                name
-                status
-                description-wrong
-                client {
+                projects {
                     id
                     name
-                    email
-                    phone
+                    status
+                    description-wrong
+                    client {
+                        id
+                        name
+                        email
+                        phone
+                    }
                 }
-            }
-        }`,
+            }`,
           })
           .end((err, res) => {
             res.should.have.status(400);
