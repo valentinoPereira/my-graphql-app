@@ -1,6 +1,6 @@
 # my-graphql-app
 
-Implemented APIs based on GraphQL, NodeJS, Express, using Github actions for CI/CD, Eslint & prettier for code quality control.
+Implemented APIs based on GraphQL, NodeJS, Express, using Github actions for CI/CD, Eslint & prettier for code quality control, Chai & mocha for testing the API.
 
 Just me getting my hands on with these babies!
 
@@ -18,4 +18,3 @@ Just me getting my hands on with these babies!
 
 1. Use dotenv for secrets and stuff
 2. Introduce a database instead of static data from data.js (Mongodb or firebase)
-3. Write unit tests (setup jest or some other API testing library)
